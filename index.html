@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="leftContent">
+      <div class="logoDiv">
+          <div>
+              <img id="logo" src="./assets/odin-lined.png" alt="odin logo" />
+            </div>
+            <div class="logoText">
+              <h1>ODIN</h1>
+            </div>
+      </div>
+    </div>
+
+    <div class="rightContent">
+      <div class="hero">
+        <p>
+          Tai chi, short for Tai chi ch'üan, sometimes called "shadowboxing", is
+          an internal Chinese martial art practiced for defense training, health
+          benefits and meditation. Tai chi has practitioners worldwide from Asia
+          to the Americas.
+        </p>
+        <br />
+        <h1>join us <em>now</em></h1>
+      </div>
+      <form action="">
+        <div class="formHeader">
+          <h2 class="formHeader">sign-up!</h2>
+        </div>
+
+        <div class="inputs">
+          <div class="row">
+            <label for="firstname">first name</label>
+            <input type="text" id="firstname" />
+          </div>
+
+          <div class="row">
+            <label for="lastname">last name</label>
+            <input type="text" id="lastname" />
+          </div>
+
+          <div class="row">
+            <label for="email">email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="row">
+            <label for="phone number">phone number</label>
+            <input type="number" id="phone number" />
+          </div>
+
+          <div class="row">
+            <label for="password">password</label>
+            <input type="password" id="password" />
+          </div>
+
+          <div class="row">
+            <label for="passwordConf">password again</label>
+            <input type="password" id="passwordConf" />
+          </div>
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </body>
 </html>
