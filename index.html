@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign-up</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="leftContent">
       <div class="logoDiv">
-          <div>
-              <img id="logo" src="./assets/odin-lined.png" alt="odin logo" />
-            </div>
-            <div class="logoText">
-              <h1>ODIN</h1>
-            </div>
+        <div>
+          <img id="logo" src="./assets/odin-lined.png" alt="odin logo" />
+        </div>
+        <div class="logoText">
+          <h1>ODIN</h1>
+        </div>
       </div>
     </div>
 
@@ -30,43 +31,48 @@
         <br />
         <h1>join us <em>now</em></h1>
       </div>
-      <form action="">
+      <form action="" method="">
+        
         <div class="formHeader">
           <h2 class="formHeader">sign-up!</h2>
         </div>
-
         <div class="inputs">
-          <div class="row">
-            <label for="firstname">first name</label>
-            <input type="text" id="firstname" />
+          <div class="nameDiv">
+            <div class="row">
+              <label for="firstname">first name</label>
+              <input type="text" id="firstname" />
+            </div>
+            <div class="row">
+              <label for="lastname">last name</label>
+              <input type="text" id="lastname" />
+            </div>
           </div>
-
-          <div class="row">
-            <label for="lastname">last name</label>
-            <input type="text" id="lastname" />
+          <div class="contactDiv">
+            <div class="row">
+              <label for="email">email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="row">
+              <label for="phone number">phone number</label>
+              <input type="number" id="phone number" />
+            </div>
           </div>
-
-          <div class="row">
-            <label for="email">email</label>
-            <input type="email" id="email" />
+          <div class="passwordDiv">
+            <div class="row">
+              <label for="password1">password</label>
+              <input type="password" id="password1" name="password1"  autocomplete="on" required/>
+            </div>
+            <div class="row">
+              <label for="password2">confirm password</label>
+              <input type="password" id="password2" name="password2"required autocomplete="on"/>
+            </div>
           </div>
-          <div class="row">
-            <label for="phone number">phone number</label>
-            <input type="number" id="phone number" />
-          </div>
-
-          <div class="row">
-            <label for="password">password</label>
-            <input type="password" id="password" />
-          </div>
-
-          <div class="row">
-            <label for="passwordConf">password again</label>
-            <input type="password" id="passwordConf" />
-          </div>
+          
+          
         </div>
-        <button type="submit">submit</button>
+        <div class="buttonDiv"><button type="submit" onsubmit="return checkPassword(FormData)">submit</button></div>
       </form>
+
     </div>
   </body>
 </html>
